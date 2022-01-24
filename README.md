@@ -77,7 +77,7 @@ We can see our images by `Docker images` command: :
 
 ### ***Serve a Docker container***
 
-Now the goal is to run our online inference meaning that each time a client issues a POST request to the `/line/<Line>`, `/prediction/<Line>`, `/score endpoints`, we will show the requested data (row), predict the class of the data we inject using our pre-trained models, and the score of our pre-trained models using all the available data. To launch the web server, we will run a Docker container and run the `api.py` script:
+Now the goal is to run our online inference meaning that each time a client issues a POST request to the `/line/<Line>`, `/prediction/<Line>`, `/score` endpoints, we will show the requested data (row), predict the class of the data we inject using our pre-trained models, and the score of our pre-trained models using all the available data. To launch the web server, we will run a Docker container and run the `api.py` script:
 
 ``` bat
 docker run -it -p 5000:5000 my-docker-api python api.py
